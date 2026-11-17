@@ -1,0 +1,473 @@
+/*
+  GamePad Viewer edit-skin: GameSir Tarantula 8K — Dark Neon Edition
+  Target base: PlayStation 4 (White), s=8, Edit CSS URL (.edit class)
+  Keep this CSS file and tarantula8k-dark-neon-base.png in the same public folder.
+*/
+
+.controller.ds4.white.edit,
+.controller.ds4.edit.white,
+.controller.edit.ds4.white {
+  --tn-active: #ff3158;
+  --tn-active-soft: rgba(255, 49, 88, 0.86);
+  --tn-glow: rgba(255, 49, 88, 0.78);
+  width: 768px !important;
+  height: 512px !important;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  background-image: url("./tarantula8k-dark-neon-base.png") !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% 100% !important;
+  background-color: transparent !important;
+  overflow: visible !important;
+}
+
+/* Triggers: the base artwork is dark; the GPV trigger value controls opacity. */
+.controller.ds4.white.edit .triggers {
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 768px !important;
+  height: 82px !important;
+}
+
+.controller.ds4.white.edit .trigger {
+  position: absolute !important;
+  top: 18px !important;
+  width: 130px !important;
+  height: 54px !important;
+  background-image: none !important;
+  background-color: var(--tn-active-soft) !important;
+  border: 1px solid rgba(255, 116, 145, 0.9) !important;
+  border-radius: 55% 55% 18% 18% !important;
+  box-shadow: 0 0 9px var(--tn-glow), 0 0 22px rgba(255,49,88,.55) !important;
+  transition: background-color 80ms linear, box-shadow 80ms linear !important;
+}
+.controller.ds4.white.edit .trigger.left {
+  left: 112px !important;
+  right: auto !important;
+  float: none !important;
+}
+.controller.ds4.white.edit .trigger.right {
+  left: 526px !important;
+  right: auto !important;
+  float: none !important;
+  background-position: initial !important;
+}
+
+/* L1/R1 shoulder buttons. */
+.controller.ds4.white.edit .bumpers {
+  position: absolute !important;
+  left: 104px !important;
+  top: 57px !important;
+  width: 560px !important;
+  height: 32px !important;
+}
+.controller.ds4.white.edit .bumper {
+  position: absolute !important;
+  top: 0 !important;
+  width: 118px !important;
+  height: 25px !important;
+  background: transparent !important;
+  background-image: none !important;
+  border: 1px solid transparent !important;
+  border-radius: 16px !important;
+  opacity: 0 !important;
+  box-shadow: none !important;
+}
+.controller.ds4.white.edit .bumper.left {
+  left: 0 !important;
+  right: auto !important;
+  float: none !important;
+}
+.controller.ds4.white.edit .bumper.right {
+  left: 338px !important;
+  right: auto !important;
+  float: none !important;
+  transform: none !important;
+}
+.controller.ds4.white.edit .bumper.pressed {
+  opacity: 1 !important;
+  background: var(--tn-active-soft) !important;
+  border-color: rgba(255,116,145,.9) !important;
+  box-shadow: 0 0 10px var(--tn-glow), 0 0 22px rgba(255,49,88,.55) !important;
+}
+
+/* BACK and START. */
+.controller.ds4.white.edit .arrows {
+  position: absolute !important;
+  left: 226px !important;
+  top: 67px !important;
+  width: 316px !important;
+  height: 48px !important;
+}
+.controller.ds4.white.edit .back,
+.controller.ds4.white.edit .start {
+  position: absolute !important;
+  top: 0 !important;
+  width: 48px !important;
+  height: 38px !important;
+  background: transparent !important;
+  background-image: none !important;
+  border: 1px solid transparent !important;
+  border-radius: 12px !important;
+  opacity: 0 !important;
+  box-shadow: none !important;
+}
+.controller.ds4.white.edit .back {
+  left: 8px !important;
+  right: auto !important;
+  float: none !important;
+  transform: rotate(31deg) !important;
+}
+.controller.ds4.white.edit .start {
+  left: 260px !important;
+  right: auto !important;
+  float: none !important;
+  transform: rotate(-31deg) !important;
+}
+.controller.ds4.white.edit .back.pressed,
+.controller.ds4.white.edit .start.pressed {
+  opacity: 1 !important;
+  background: var(--tn-active-soft) !important;
+  border-color: rgba(255,116,145,.9) !important;
+  box-shadow: 0 0 10px var(--tn-glow), 0 0 22px rgba(255,49,88,.55) !important;
+}
+
+/* ABXY overlays: semi-transparent so the letters in the artwork remain visible. */
+.controller.ds4.white.edit .abxy {
+  position: absolute !important;
+  left: 519px !important;
+  top: 86px !important;
+  width: 165px !important;
+  height: 150px !important;
+}
+.controller.ds4.white.edit .button {
+  position: absolute !important;
+  width: 50px !important;
+  height: 50px !important;
+  background: transparent !important;
+  background-image: none !important;
+  border: 1px solid transparent !important;
+  border-radius: 50% !important;
+  box-shadow: none !important;
+  transition: background-color 70ms linear, box-shadow 70ms linear !important;
+}
+.controller.ds4.white.edit .button.a {
+  left: 62px !important;
+  top: 94px !important;
+  right: auto !important;
+  bottom: auto !important;
+}
+.controller.ds4.white.edit .button.b {
+  left: 107px !important;
+  top: 51px !important;
+  right: auto !important;
+  bottom: auto !important;
+}
+.controller.ds4.white.edit .button.x {
+  left: 12px !important;
+  top: 50px !important;
+  right: auto !important;
+  bottom: auto !important;
+}
+.controller.ds4.white.edit .button.y {
+  left: 59px !important;
+  top: 0 !important;
+  right: auto !important;
+  bottom: auto !important;
+}
+.controller.ds4.white.edit .button.pressed {
+  background: var(--tn-active-soft) !important;
+  border-color: rgba(255,116,145,.95) !important;
+  box-shadow: 0 0 9px var(--tn-glow), 0 0 20px rgba(255,49,88,.7) !important;
+}
+
+/* White, dynamically moving thumbsticks; the artwork has dark stick wells. */
+.controller.ds4.white.edit .sticks {
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 768px !important;
+  height: 512px !important;
+}
+.controller.ds4.white.edit .stick {
+  position: absolute !important;
+  width: 88px !important;
+  height: 88px !important;
+  background: radial-gradient(circle at 35% 28%, #ffffff 0%, #f5f6f8 44%, #dfe2e7 74%, #b7bcc5 100%) !important;
+  background-image: none !important;
+  border: 2px solid rgba(240,243,248,.95) !important;
+  border-radius: 50% !important;
+  box-shadow: inset 0 2px 5px rgba(255,255,255,.9), inset 0 -5px 8px rgba(90,96,106,.32), 0 3px 8px rgba(0,0,0,.8), 0 0 7px rgba(255,255,255,.22) !important;
+}
+.controller.ds4.white.edit .stick.left {
+  left: 228px;
+  top: 202px;
+}
+.controller.ds4.white.edit .stick.right {
+  left: 453px;
+  top: 202px;
+}
+.controller.ds4.white.edit .stick.pressed {
+  filter: brightness(1.04) !important;
+}
+
+/* D-pad overlays. */
+.controller.ds4.white.edit .dpad {
+  position: absolute !important;
+  left: 104px !important;
+  top: 97px !important;
+  width: 132px !important;
+  height: 128px !important;
+}
+.controller.ds4.white.edit .face {
+  position: absolute !important;
+  background: transparent !important;
+  background-image: none !important;
+  border: 1px solid transparent !important;
+  box-shadow: none !important;
+  border-radius: 9px !important;
+}
+.controller.ds4.white.edit .face.up,
+.controller.ds4.white.edit .face.down {
+  width: 43px !important;
+  height: 57px !important;
+  left: 44px !important;
+  right: auto !important;
+}
+.controller.ds4.white.edit .face.up {
+  top: 0 !important;
+  bottom: auto !important;
+}
+.controller.ds4.white.edit .face.down {
+  bottom: 0 !important;
+  top: auto !important;
+}
+.controller.ds4.white.edit .face.left,
+.controller.ds4.white.edit .face.right {
+  width: 57px !important;
+  height: 43px !important;
+  top: 43px !important;
+  bottom: auto !important;
+}
+.controller.ds4.white.edit .face.left {
+  left: 0 !important;
+  right: auto !important;
+}
+.controller.ds4.white.edit .face.right {
+  right: 0 !important;
+  left: auto !important;
+}
+.controller.ds4.white.edit .face.pressed {
+  background: var(--tn-active-soft) !important;
+  border-color: rgba(255,116,145,.95) !important;
+  box-shadow: 0 0 9px var(--tn-glow), 0 0 20px rgba(255,49,88,.65) !important;
+}
+
+/* PS/central button; retain the static logo underneath. */
+.controller.ds4.white.edit .meta {
+  position: absolute !important;
+  left: 360px !important;
+  top: 210px !important;
+  width: 48px !important;
+  height: 48px !important;
+  background: transparent !important;
+  background-image: none !important;
+  border-radius: 50% !important;
+}
+.controller.ds4.white.edit .meta.pressed {
+  background: rgba(255,49,88,.28) !important;
+  box-shadow: 0 0 10px var(--tn-glow), 0 0 22px rgba(255,49,88,.55) !important;
+}
+
+/* The DS4 touchpad does not exist on this design; hide its hit area. */
+.controller.ds4.white.edit .touchpad,
+.controller.ds4.white.edit .quadrant {
+  display: none !important;
+}
+
+/* Match the same active colour across any remaining interactive GPV elements. */
+.controller.ds4.white.edit .trigger.pressed,
+.controller.ds4.white.edit .button.pressed,
+.controller.ds4.white.edit .face.pressed,
+.controller.ds4.white.edit .bumper.pressed,
+.controller.ds4.white.edit .back.pressed,
+.controller.ds4.white.edit .start.pressed {
+  color: #ffffff !important;
+}
+
+
+/* ======================================================================
+   REVISION 2 — corrections based on the live GPV preview screenshot
+   - Restore the normal small .sticks coordinate space so GPV's inline
+     stick rotation remains attached to each cap.
+   - Remove the inherited DS4 sprite mask (it was clipping the white cap
+     into a dark centre / partial rim).
+   - Align L2/R2 active regions to the two shoulder silhouettes.
+   - Align L1/R1 with the same shoulder columns; make idle caps dark and
+     visible, with a single pink pressed state.
+   ====================================================================== */
+
+.controller.ds4.white.edit {
+  width: 768px !important;
+  height: 512px !important;
+}
+
+/* L2 / R2: analog triggers. GPV controls opacity from the analog value;
+   do not force opacity here. The background artwork provides the dark
+   unpressed silhouette, and this overlay lights up as pressure rises. */
+.controller.ds4.white.edit .triggers {
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 768px !important;
+  height: 82px !important;
+  pointer-events: none !important;
+}
+.controller.ds4.white.edit .trigger {
+  position: absolute !important;
+  top: 18px !important;
+  width: 130px !important;
+  height: 54px !important;
+  margin: 0 !important;
+  float: none !important;
+  background: linear-gradient(180deg, #ff5475 0%, #ff3158 55%, #d91f46 100%) !important;
+  border: 1px solid rgba(255, 155, 176, .9) !important;
+  border-radius: 35% 35% 16% 16% / 42% 42% 16% 16% !important;
+  clip-path: polygon(8% 25%, 18% 3%, 82% 3%, 92% 25%, 98% 75%, 90% 100%, 10% 100%, 2% 75%) !important;
+  box-shadow: inset 0 2px 5px rgba(255,255,255,.24),
+              0 0 10px rgba(255,49,88,.62),
+              0 0 24px rgba(255,49,88,.34) !important;
+  transition: opacity 45ms linear, filter 45ms linear !important;
+  pointer-events: none !important;
+}
+.controller.ds4.white.edit .trigger.left {
+  left: 112px !important;
+  right: auto !important;
+  background-position: initial !important;
+}
+.controller.ds4.white.edit .trigger.right {
+  left: 526px !important;
+  right: auto !important;
+  transform: none !important;
+  background-position: initial !important;
+}
+
+/* L1 / R1: separate digital bumpers directly below L2 / R2.
+   The hitboxes mirror the shoulder columns of the background artwork. */
+.controller.ds4.white.edit .bumpers {
+  position: absolute !important;
+  left: 0 !important;
+  top: 66px !important;
+  width: 768px !important;
+  height: 30px !important;
+  pointer-events: none !important;
+}
+.controller.ds4.white.edit .bumper {
+  position: absolute !important;
+  top: 0 !important;
+  width: 130px !important;
+  height: 25px !important;
+  margin: 0 !important;
+  float: none !important;
+  opacity: 1 !important;
+  background: linear-gradient(180deg, #292b31 0%, #111216 100%) !important;
+  border: 1px solid #555963 !important;
+  border-radius: 7px 7px 11px 11px !important;
+  box-shadow: inset 0 1px 2px rgba(255,255,255,.12),
+              0 2px 4px rgba(0,0,0,.65) !important;
+  transition: background 65ms linear, box-shadow 65ms linear, border-color 65ms linear !important;
+  pointer-events: none !important;
+}
+.controller.ds4.white.edit .bumper.left {
+  left: 112px !important;
+  right: auto !important;
+  transform: none !important;
+}
+.controller.ds4.white.edit .bumper.right {
+  left: 526px !important;
+  right: auto !important;
+  transform: none !important;
+}
+.controller.ds4.white.edit .bumper.pressed {
+  opacity: 1 !important;
+  background: linear-gradient(180deg, #ff6c88 0%, #ff3158 60%, #d91f46 100%) !important;
+  border-color: #ff9bb0 !important;
+  box-shadow: inset 0 1px 2px rgba(255,255,255,.3),
+              0 0 9px rgba(255,49,88,.78),
+              0 0 20px rgba(255,49,88,.48) !important;
+}
+
+/* Analog sticks. IMPORTANT: .sticks is a compact coordinate plane, not a
+   full-controller plane. GamePad Viewer applies an inline transform to
+   each .stick element from the live axis values; this preserves that
+   transform while placing both caps over the white-stick wells. */
+.controller.ds4.white.edit .sticks {
+  position: absolute !important;
+  left: 231px !important;
+  top: 225px !important;
+  width: 306px !important;
+  height: 82px !important;
+  z-index: 5 !important;
+  overflow: visible !important;
+}
+.controller.ds4.white.edit .stick {
+  position: absolute !important;
+  width: 82px !important;
+  height: 82px !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  -webkit-mask: none !important;
+  mask: none !important;
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+  background-color: #f4f5f7 !important;
+  background-image: radial-gradient(circle at 34% 27%,
+                    #ffffff 0%, #fafbfc 28%, #e9ebef 61%,
+                    #c8cdd5 83%, #9299a4 100%) !important;
+  border: 2px solid #f5f6f8 !important;
+  border-radius: 50% !important;
+  box-shadow: inset 0 2px 4px rgba(255,255,255,.95),
+              inset 0 -6px 10px rgba(65,72,82,.28),
+              0 3px 8px rgba(0,0,0,.72),
+              0 0 8px rgba(255,255,255,.3) !important;
+  transform-origin: 50% 50% !important;
+  transition: filter 45ms linear !important;
+  will-change: transform !important;
+}
+.controller.ds4.white.edit .stick.left {
+  top: 0 !important;
+  left: 0 !important;
+  right: auto !important;
+  bottom: auto !important;
+}
+.controller.ds4.white.edit .stick.right {
+  top: 0 !important;
+  left: 224px !important;
+  right: auto !important;
+  bottom: auto !important;
+}
+.controller.ds4.white.edit .stick.pressed {
+  filter: brightness(1.04) !important;
+}
+.controller.ds4.white.edit .stick::after {
+  content: "";
+  position: absolute;
+  left: 17%;
+  top: 14%;
+  width: 27%;
+  height: 12%;
+  border-radius: 50%;
+  background: rgba(255,255,255,.58);
+  filter: blur(2px);
+  pointer-events: none;
+}
+
+/* Prevent the base DS4 stick sprite and original shoulder sprites from
+   being painted over the new Tarantula 8K controls. */
+.controller.ds4.white.edit .stick,
+.controller.ds4.white.edit .trigger,
+.controller.ds4.white.edit .bumper {
+  background-repeat: no-repeat !important;
+}
